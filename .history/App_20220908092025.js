@@ -22,6 +22,3 @@ function operate(y, z, op) {
         return y / z;
         }
     }
-}
-
-console.log(operate(2, 2,-));

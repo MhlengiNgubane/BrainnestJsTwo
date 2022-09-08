@@ -19,9 +19,7 @@ function operate(y, z, op) {
         if(z === 0) {
             return 'undefined';
         } else {
-        return y / z;
+        return y / y;
         }
     }
 }
-
-console.log(operate(2, 2,-));

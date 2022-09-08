@@ -16,12 +16,10 @@ function operate(y, z, op) {
     } else if(op === '^') {
         return y ** z;
     } else if(op === '÷') {
-        if(z === 0) {
+        if(y === 0) {
             return 'undefined';
         } else {
-        return y / z;
+        return x / y;
         }
     }
 }
-
-console.log(operate(2, 2,-));

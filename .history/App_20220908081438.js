@@ -13,15 +13,11 @@ function operate(y, z, op) {
         return y - z;
     } else if(op === 'x') {
         return y * z;
-    } else if(op === '^') {
-        return y ** z;
     } else if(op === '÷') {
-        if(z === 0) {
-            return 'undefined';
+        if(y === 0) {
+            return 'lma';
         } else {
-        return y / z;
+        return x / y;
         }
     }
 }
-
-console.log(operate(2, 2,-));

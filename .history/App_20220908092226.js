@@ -24,4 +24,4 @@ function operate(y, z, op) {
     }
 }
 
-console.log(operate(2, 2,-));
+console.log(operate(2, 2,-))
