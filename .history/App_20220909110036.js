@@ -25,7 +25,7 @@ function addDecimal() {
 }
 
 function plusMinus() {     
-    if(current.indexOf("-") === 0) {
+   if(current.indexOf("-") === 0) {
       current = current.substring(1);
     } else {
       current = "-" + current;
