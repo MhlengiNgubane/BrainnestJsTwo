@@ -7,44 +7,44 @@ function subtract(num1, num2){
   return num1 - num2;
 }
 /* multiply two numbers */
-function multiply(num1, num2){
-  return num1 * num2;
+function multiply(num1, secondNumber){
+  return num1 * secondNumber;
 }
 /* divide two numbers */
-function divide(num1, num2){
-  return num1 / num2;
+function divide(num1, secondNumber){
+  return num1 / secondNumber;
 }
 /* Make the operations */
-function operate(num1, operator, num2){
+function operate(num1, operator, secondNumber){
   if(operator === '+'){
-    return add(num1, num2);
+      return add(num1, secondNumber);
   }
   else if(operator === '-'){
-    return subtract(num1, num2);
+      return subtract(num1, secondNumber);
   }
   else if(operator === '*'){
-    return multiply(num1, num2);
+      return multiply(num1, secondNumber);
   }
   else if(operator === '/'){
-    return divide(num1, num2);
+      return divide(num1, secondNumber);
   }
-  return num2;
+  return secondNumber;
 }
 
 const display = document.querySelector('.display p');
 
 const calculator = {
   displayValue: '0',
-  num1: null,
+  firstNumber: null,
   operator: null,
-  num2: false,
+  secondNumber: false,
 };
 
 function clear() {
   calculator.displayValue = '0';
-  calculator.num1 = null;
+  calculator.firstNumber = null;
   calculator.operator = null;
-  calculator.num2 = false;
+  calculator.secondNumber = false;
 }       
 
 function updateDisplay() {

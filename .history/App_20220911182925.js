@@ -42,9 +42,9 @@ const calculator = {
 
 function clear() {
   calculator.displayValue = '0';
-  calculator.num1 = null;
+  calculator.firstNumber = null;
   calculator.operator = null;
-  calculator.num2 = false;
+  calculator.secondNumber = false;
 }       
 
 function updateDisplay() {

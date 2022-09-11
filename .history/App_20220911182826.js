@@ -35,16 +35,16 @@ const display = document.querySelector('.display p');
 
 const calculator = {
   displayValue: '0',
-  num1: null,
+  firstNumber: null,
   operator: null,
-  num2: false,
+  secondNumber: false,
 };
 
 function clear() {
   calculator.displayValue = '0';
-  calculator.num1 = null;
+  calculator.firstNumber = null;
   calculator.operator = null;
-  calculator.num2 = false;
+  calculator.secondNumber = false;
 }       
 
 function updateDisplay() {

@@ -31,7 +31,7 @@ function operate(num1, operator, num2){
   return num2;
 }
 
-const display = document.querySelector('.display p');
+const display = document.querySelector('.display ');
 
 const calculator = {
   displayValue: '0',
@@ -42,9 +42,9 @@ const calculator = {
 
 function clear() {
   calculator.displayValue = '0';
-  calculator.num1 = null;
+  calculator.firstNumber = null;
   calculator.operator = null;
-  calculator.num2 = false;
+  calculator.secondNumber = false;
 }       
 
 function updateDisplay() {

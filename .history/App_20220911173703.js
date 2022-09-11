@@ -1,50 +1,50 @@
 /* Add two numbers */
-function add(num1, num2){
-  return num1 + num2;
+function add(num1, secondNumber){
+  return num1 + secondNumber;
 }
 /* subtract two numbers */
-function subtract(num1, num2){
-  return num1 - num2;
+function subtract(num1, secondNumber){
+  return num1 - secondNumber;
 }
 /* multiply two numbers */
-function multiply(num1, num2){
-  return num1 * num2;
+function multiply(num1, secondNumber){
+  return num1 * secondNumber;
 }
 /* divide two numbers */
-function divide(num1, num2){
-  return num1 / num2;
+function divide(firstNumber, secondNumber){
+  return firstNumber / secondNumber;
 }
 /* Make the operations */
-function operate(num1, operator, num2){
+function operate(operator, firstNumber, secondNumber){
   if(operator === '+'){
-    return add(num1, num2);
+      return add(firstNumber, secondNumber);
   }
   else if(operator === '-'){
-    return subtract(num1, num2);
+      return subtract(firstNumber, secondNumber);
   }
   else if(operator === '*'){
-    return multiply(num1, num2);
+      return multiply(firstNumber, secondNumber);
   }
   else if(operator === '/'){
-    return divide(num1, num2);
+      return divide(firstNumber, secondNumber);
   }
-  return num2;
+  return secondNumber;
 }
 
 const display = document.querySelector('.display p');
 
 const calculator = {
   displayValue: '0',
-  num1: null,
+  firstNumber: null,
   operator: null,
-  num2: false,
+  secondNumber: false,
 };
 
 function clear() {
   calculator.displayValue = '0';
-  calculator.num1 = null;
+  calculator.firstNumber = null;
   calculator.operator = null;
-  calculator.num2 = false;
+  calculator.secondNumber = false;
 }       
 
 function updateDisplay() {
