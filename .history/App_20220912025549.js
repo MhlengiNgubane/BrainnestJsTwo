@@ -164,7 +164,7 @@ function calculate(inputOperator) {
       calculator.displayValue = `${parseFloat(result.toFixed(6))}`;
       calculator.num1 = result;
   }
-  calculator.num2 = true;
+  calculator.secondNumber = true;
   calculator.operator = inputOperator;
   console.log(calculator);
 }

@@ -118,9 +118,9 @@ function percentage(){
 }
 
 function decimal(dot) {
-  if (calculator.num2 === true) {
+  if (calculator.secondNumber === true) {
       calculator.displayValue = '0.'
-      calculator.num2 = false;
+      calculator.secondNumber = false;
       return
   }
   if (!calculator.displayValue.includes(dot)) {
@@ -130,11 +130,11 @@ function decimal(dot) {
 
 function displayNumber(number) {
   let displayValue = calculator.displayValue;
-  const num2 = calculator.num2r;
+  const secondNumber = calculator.secondNumber;
   
-  if (num2 === true) {
+  if (secondNumber === true) {
       calculator.displayValue = number;
-      calculator.num2 = false;
+      calculator.secondNumber = false;
   }
   else if(displayValue === '0'){
       calculator.displayValue = number;
@@ -151,7 +151,7 @@ function calculate(inputOperator) {
  
   const inputValue = parseFloat(displayValue);
 
-  if (operator && calculator.num2)  {
+  if (operator && calculator.secondNumber)  {
       calculator.operator = inputOperator;
       return;
     }
@@ -164,7 +164,7 @@ function calculate(inputOperator) {
       calculator.displayValue = `${parseFloat(result.toFixed(6))}`;
       calculator.num1 = result;
   }
-  calculator.num2 = true;
+  calculator.secondNumber = true;
   calculator.operator = inputOperator;
   console.log(calculator);
 }

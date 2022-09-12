@@ -134,7 +134,7 @@ function displayNumber(number) {
   
   if (num2 === true) {
       calculator.displayValue = number;
-      calculator.num2 = false;
+      calculator.secondNumber = false;
   }
   else if(displayValue === '0'){
       calculator.displayValue = number;
@@ -151,7 +151,7 @@ function calculate(inputOperator) {
  
   const inputValue = parseFloat(displayValue);
 
-  if (operator && calculator.num2)  {
+  if (operator && calculator.secondNumber)  {
       calculator.operator = inputOperator;
       return;
     }
@@ -164,7 +164,7 @@ function calculate(inputOperator) {
       calculator.displayValue = `${parseFloat(result.toFixed(6))}`;
       calculator.num1 = result;
   }
-  calculator.num2 = true;
+  calculator.secondNumber = true;
   calculator.operator = inputOperator;
   console.log(calculator);
 }
