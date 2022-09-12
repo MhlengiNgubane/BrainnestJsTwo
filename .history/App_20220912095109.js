@@ -10,6 +10,7 @@ function multiply(firstNumber, secondNumber){
 function divide(firstNumber, secondNumber){
   return firstNumber / secondNumber;
 }
+/* Make the operations */
 function operate(operator, firstNumber, secondNumber){
   if(operator === '+'){
       return add(firstNumber, secondNumber);

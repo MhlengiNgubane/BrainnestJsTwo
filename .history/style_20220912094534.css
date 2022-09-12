@@ -62,22 +62,27 @@ button{
     text-align: center;
     margin-top: 7px;
     margin-bottom: 7px;
-    color: #f7f7f7;
     font-size: 25px;
-    background-color: #403e3e;
 }
 
-.oper {
-    background-color: #36a4e3;
-    color: #121111;
-}
 
-.ac {
-    background-color: #e1f4c7;
-    color: #121111;
-}
 
-.equal {
-    background-color: #f7f7f7;
-    color: #121111;
+
+
+
+@media(max-width: 430px){
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    
+    .buttons{
+        row-gap: 5px;
+        column-gap: 5px;
+        background: linear-gradient(360deg, #141414 1.56%, rgba(0, 0, 0, 0.21) 100%);
+        padding: 18px 13px 13px 13px;
+    }
+
+   
 }

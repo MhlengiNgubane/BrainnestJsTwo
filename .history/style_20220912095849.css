@@ -69,15 +69,14 @@ button{
 
 .oper {
     background-color: #36a4e3;
-    color: #121111;
+    color: #f7f7f7;
 }
 
 .ac {
     background-color: #e1f4c7;
-    color: #121111;
+    color: #f7f7f7;
 }
 
 .equal {
     background-color: #f7f7f7;
-    color: #121111;
 }

@@ -1,15 +1,20 @@
+/* Add two numbers */
 function add(firstNumber, secondNumber){
   return firstNumber + secondNumber;
 }
+/* subtract two numbers */
 function subtract(firstNumber, secondNumber){
   return firstNumber - secondNumber;
 }
+/* multiply two numbers */
 function multiply(firstNumber, secondNumber){
   return firstNumber * secondNumber;
 }
+/* divide two numbers */
 function divide(firstNumber, secondNumber){
   return firstNumber / secondNumber;
 }
+/* Make the operations */
 function operate(operator, firstNumber, secondNumber){
   if(operator === '+'){
       return add(firstNumber, secondNumber);
@@ -26,7 +31,7 @@ function operate(operator, firstNumber, secondNumber){
   return secondNumber;
 }
 
-const display = document.querySelector('.input');
+const display = document.querySelector('.display p');
 
 const calculator = {
   displayValue: '0',

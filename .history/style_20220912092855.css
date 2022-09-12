@@ -33,15 +33,20 @@ body{
 }
 
 .input{
-    position: relative;
-    width: 355px;
-    height: 125px;
-    border: 3px solid #2f2f2f;
-    text-align: right;
-    border-radius: 8px;
-    background-color: #2f2f2f;
-    color: #fff;
-    font-size: 60px;
+    background: linear-gradient(360deg, #E8EAD8 0%, #D2D6B7 48.12%, #DBDEC1 50.76%, #EDEFE0 100%);
+    width: 94%;
+    min-height: 65px;
+    padding: 0 14px;
+    text-align:  end;
+    font-size: 48px;
+    line-height: 112px;
+    display: flex;<input type="text" class="input" value="" disabled />
+    align-items: center;
+    justify-content: end;
+    color: #000000;
+    opacity: 0.8;
+    outline: none;
+    border: none;
 }
 
 .buttons{
@@ -62,22 +67,31 @@ button{
     text-align: center;
     margin-top: 7px;
     margin-bottom: 7px;
-    color: #f7f7f7;
     font-size: 25px;
-    background-color: #403e3e;
 }
 
-.oper {
-    background-color: #36a4e3;
-    color: #121111;
+.grey{
+    background: linear-gradient(180deg, #7F878C 0%, #4C5154 100%);
 }
 
-.ac {
-    background-color: #e1f4c7;
-    color: #121111;
+
+.equal{
+    background: linear-gradient(180deg, #FC8827 0%, #CF650C 100%);
 }
 
-.equal {
-    background-color: #f7f7f7;
-    color: #121111;
+@media(max-width: 430px){
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    
+    .buttons{
+        row-gap: 5px;
+        column-gap: 5px;
+        background: linear-gradient(360deg, #141414 1.56%, rgba(0, 0, 0, 0.21) 100%);
+        padding: 18px 13px 13px 13px;
+    }
+
+   
 }

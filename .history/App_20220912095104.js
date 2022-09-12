@@ -7,9 +7,11 @@ function subtract(firstNumber, secondNumber){
 function multiply(firstNumber, secondNumber){
   return firstNumber * secondNumber;
 }
+/* divide two numbers */
 function divide(firstNumber, secondNumber){
   return firstNumber / secondNumber;
 }
+/* Make the operations */
 function operate(operator, firstNumber, secondNumber){
   if(operator === '+'){
       return add(firstNumber, secondNumber);
